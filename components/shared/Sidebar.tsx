@@ -33,7 +33,7 @@ function Sidebar() {
           ${open ? "translate-x-0" : "-translate-x-full md:translate-x-0"}
         `}
             >
-                <h2 className="text-xl font-bold mb-6 hidden md:block">Admin Panel</h2>
+                <h2 className="text-xl font-bold mb-6 hidden md:block">FFG Admin</h2>
                 <nav className="flex flex-col space-y-4">
                     {links.map((link) => (
                         <Link

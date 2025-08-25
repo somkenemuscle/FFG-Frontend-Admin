@@ -47,33 +47,33 @@ function TrainersPage() {
         }
     };
 
-    if (loading) return <p className="p-4">Loading...</p>;
+    if (loading) return <p className="p-4">Loading Trainers...</p>;
 
     return (
         <div className="p-6">
-            <h1 className="text-2xl font-bold mb-4">Trainers</h1>
-            <table className="min-w-full bg-white text-black shadow overflow-hidden">
+            <h1 className="text-2xl font-bold mb-4">All Trainers</h1>
+            <table className="min-w-full bg-white text-black shadow overflow-hidden text-center">
                 <thead>
-                    <tr className="bg-gray-800 text-white">
-                        <th className="py-2 px-4 text-left">Full Name</th>
-                        <th className="py-2 px-4 text-left">Email</th>
-                        <th className="py-2 px-4 text-left">Phone</th>
-                        <th className="py-2 px-4 text-left">Field</th>
-                        <th className="py-2 px-4 text-left">Role</th>
-                        <th className="py-2 px-4 text-left">Date Joined</th>
-                        <th className="py-2 px-4 text-center">Actions</th>
+                    <tr className="bg-black text-white text-center p-3">
+                        <th className="p-3 border">Full Name</th>
+                        <th className="p-3 border">Email</th>
+                        <th className="p-3 border">Phone</th>
+                        <th className="p-3 border">Field</th>
+                        <th className="p-3 border">Role</th>
+                        <th className="p-3 border">Date Joined</th>
+                        <th className="p-3 border">Actions</th>
                     </tr>
                 </thead>
                 <tbody>
                     {trainers.map(trainer => (
-                        <tr key={trainer._id} className="border-b ">
-                            <td className="py-2 px-4">{trainer.fullname}</td>
-                            <td className="py-2 px-4">{trainer.email}</td>
-                            <td className="py-2 px-4">{trainer.phoneNumber}</td>
-                            <td className="py-2 px-4">{trainer.field}</td>
-                            <td className="py-2 px-4 capitalize">{trainer.role}</td>
-                            <td className="py-2 px-4">{new Date(trainer.createdAt).toISOString().split("T")[0]}</td>
-                            <td className="py-2 px-4 text-center">
+                        <tr key={trainer._id} className="border-b">
+                            <td className="p-3 border">{trainer.fullname}</td>
+                            <td className="p-3 border">{trainer.email}</td>
+                            <td className="p-3 border">{trainer.phoneNumber}</td>
+                            <td className="p-3 border">{trainer.field}</td>
+                            <td className="p-3 border capitalize">{trainer.role}</td>
+                            <td className="p-3 border">{new Date(trainer.createdAt).toISOString().split("T")[0]}</td>
+                            <td className="p-3 border">
                                 <button
                                     onClick={() => handleDelete(trainer._id)}
                                     className="text-red-500 hover:text-red-700"
