@@ -52,7 +52,7 @@ function TrainersPage() {
     return (
         <div className="p-6">
             <h1 className="text-2xl font-bold mb-4">Trainers</h1>
-            <table className="min-w-full bg-black text-white shadow overflow-hidden">
+            <table className="min-w-full bg-white text-black shadow overflow-hidden">
                 <thead>
                     <tr className="bg-gray-800 text-white">
                         <th className="py-2 px-4 text-left">Full Name</th>

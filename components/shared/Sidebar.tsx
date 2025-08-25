@@ -9,7 +9,7 @@ const links = [
     { name: "Trainers", url: "/admin/trainers" },
     { name: "Customers", url: "/admin/customers" },
     { name: "Bookings", url: "/admin/bookings" },
-    { name: "Settings", url: "/admin/settings" },
+    { name: "Equipments", url: "/admin/equipments" },
 ];
 
 function Sidebar() {
