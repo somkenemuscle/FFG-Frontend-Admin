@@ -63,10 +63,10 @@ export default function BookingsPage() {
 
     return (
         <div className="p-6">
-            <h1 className="text-2xl font-bold mb-6">Bookings</h1>
+            <h1 className="text-2xl font-bold mb-6">All Bookings</h1>
             <div className="overflow-x-auto">
                 <table className="min-w-full border border-gray-200 rounded-lg shadow-sm">
-                    <thead className="bg-gray-700 text-white">
+                    <thead className="bg-black text-white">
                         <tr>
                             <th className="p-3 border">Customer Name</th>
                             <th className="p-3 border">Email</th>
