@@ -10,6 +10,8 @@ const links = [
     { name: "Customers", url: "/admin/customers" },
     { name: "Bookings", url: "/admin/bookings" },
     { name: "Equipments", url: "/admin/equipments" },
+    { name: "Membership", url: "/admin/memberships" },
+
 ];
 
 function Sidebar() {
