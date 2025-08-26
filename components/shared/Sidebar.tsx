@@ -30,7 +30,7 @@ function Sidebar() {
             {/* Sidebar */}
             <div
                 className={`
-          bg-black text-white w-64 h-screen p-6 fixed md:static top-0 left-0
+          bg-black text-white w-64 h-full p-6 fixed md:static top-0 left-0
           transform transition-transform duration-300
           ${open ? "translate-x-0" : "-translate-x-full md:translate-x-0"}
         `}
